@@ -1,6 +1,7 @@
 package com.example.TestFivePoints.Entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -27,6 +28,8 @@ public class commande implements Serializable {
             joinColumns = { @JoinColumn(name = "commande_id") },
             inverseJoinColumns = { @JoinColumn(name = "product_id") })
     private List<produit> produits = new ArrayList<>();
+
+
 
 
     @ManyToOne(fetch = FetchType.LAZY )

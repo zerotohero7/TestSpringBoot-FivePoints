@@ -33,4 +33,15 @@ public class produit implements Serializable {
                     CascadeType.MERGE
             } )
     private List<commande> commandes = new ArrayList<>();
+
+
+
+
+
+
+
+
+
+
+
 }

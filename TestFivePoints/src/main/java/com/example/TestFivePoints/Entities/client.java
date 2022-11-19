@@ -33,5 +33,6 @@ public class client implements Serializable {
     private List<commande> commandes;
 
 
-
+    public client(String nom, String prenom, String email, String password) {
+    }
 }
